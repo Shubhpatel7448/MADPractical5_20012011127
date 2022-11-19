@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun stop(view: View) {
-        Intent(applicationContext, MyService::class.java).apply { stopService(this) }
+        Intent(applicationContext, MyService::class.java).apply {
+            stopService(this) }
     }
 
 }
